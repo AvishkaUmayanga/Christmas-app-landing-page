@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Christmas App</title>
+</head>
+<body class="box-border bg-white dark:bg-black dark:text-white">
+    
+    <div class="grid items-center h-16 grid-cols-1 ">
+        <div class="z-10 flex justify-between px-10 text-lg bg-white lg:px-20 dark:bg-black" id="nav-bar">
+<div class="hidden mt-2" id="res-logo">
+<img src="./images/logo.svg" alt="logo" >
+</div>
+            <div class="flex mt-2 mb-2 align-middl" id="logo">
+                <img src="./images/logo.svg" alt="logo" >
+                <p class="font-bold logo-text">Christmas</p>
+            </div>
+            <div class="flex">
+                <ul class="flex flex-col items-center lg:flex-row max-lg:mt-5"  id="navbar-ul">
+                    <li class="mt-2 mb-2 ml-14 max-lg:hidden"><a href="#">Home</a></li>
+                    <li class="mt-2 mb-2 ml-14 max-lg:hidden"><a href="#">Celebrate</a></li>
+                    <li class="mt-2 mb-2 ml-14 max-lg:hidden"><a href="#">Gifts</a></li>
+                    <li class="mt-2 mb-2 ml-14 max-lg:hidden"><a href="#">New</a></li>
+                </ul>
+                <div class="flex items-center" id="icons">
+                   <!-- <svg id="dark-mode" xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="mt-2 mb-2 ml-10 cursor-pointer bi bi-moon" viewBox="0 0 16 16"> 
+                        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/> </svg>-->
+                    <svg id="navbar-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="mt-2 mb-2 ml-6 cursor-pointer bi bi-grid lg:hidden" viewBox="0 0 16 16"> 
+                        <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/> </svg>
+                </div> 
+            </div>
+<svg xmlns="http://www.w3.org/2000/svg" id="res-close" width="24" height="24" fill="currentColor" class="hidden mt-2 cursor-pointer bi bi-x" viewBox="0 0 16 16"> <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/> </svg>
+        </div>
+    </div>
+
+
+    
+    <div class="flex flex-col items-center justify-center mx-12 mt-20 lg:flex-row md:mx-20 xl:mx-60">
+        <div>
+            <img src="./images/santa.svg" alt="santa" class="w-[300px] md:w-[500px] md:h-[450px] lg:h-[500px]">
+        </div>
+        <div class="flex flex-col items-center mt-6 lg:mt-0 lg:items-start">
+            <p class="text-3xl lg:text-[42px] lg:leading-[45px] font-bold text-left max-sm:text-center">Merry Christmas and Happy New Year!</p><br>
+            <p class="text-base text-left lg:text-lg">Christmas and a new year is about to begin, all good wishes and successes.</p>
+            <button type="button" class="px-8 py-4 mt-5 font-bold text-white bg-red-500 rounded-full lg:px-11 lg:py-5" >Get Started</button>
+        </div>
+    </div>
+
+
+
+    <div class="flex flex-col items-center mx-4 mt-20 xl:mx-60 lg:mt-32">
+        <div class="mb-10 font-semibold text-center">
+            <p class="text-3xl">Start Giving This Christmas</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 sm:gap-9 xl:gap-24">
+            <div class="flex flex-col items-center w-32 text-center sm:w-40">
+                <img src="./images/gift.svg" alt="gift image" class="w-28 h-28">
+                <p class="text-xl font-medium">Surprise gifts</p>
+                <p class="text-base sm:text-lg">They are the best gifts there is</p>
+            </div>
+            <div class="flex flex-col items-center w-40 text-center">
+                <img src="./images/bell.svg" alt="Ornaments image" class="w-28 h-28">
+                <p class="text-xl font-medium">Ornaments</p>
+                <p class="text-base sm:text-lg">Give a moment to decorate</p>
+            </div>
+            <div class="flex flex-col items-center w-40 text-center">
+                <img src="./images/lots_of_love.svg" alt="Lots of love image" class="w-28 h-28">
+                <p class="text-xl font-medium">Lots of love</p>
+                <p class="text-base sm:text-lg">Give away feelings that last forever</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="flex flex-col items-center justify-center mx-12 mt-20 md:mx-20 lg:flex-row xl:mx-60 lg:mt-32">
+        <div class="flex flex-col items-center text-center lg:items-start lg:pr-32 lg:text-left">
+            <p class="mb-5 text-2xl font-semibold md:text-3xl">Celebrate With A Lot Of Love</p>      
+            <p class="md:text-lg text:base">In this holidays, celebrate with much love and peace, offering many blessings to our loved ones, friends and neighbors, 
+                wishing them a good Christmas message.</p>
+            <button type="button" class="px-5 py-3 mt-5 text-white bg-red-500 rounded-full">Send Good Wishes</button>
+        </div>
+        <div>
+            <img src="./images/chimney.svg" alt="chimney" class="w-[500px] lg:w-[800px]">
+        </div>
+    </div>
+
+
+    <div class="flex flex-col mx-10 mt-20 md:mx-20 xl:mx-60 lg:mt-32">
+        <div class="text-center">
+            <p class="text-3xl font-semibold">Share A Gift</p>
+        </div>
+        
+        <div class="flex flex-wrap justify-center gap-3 mt-8 sm:gap-10 xl:gap-24">
+            <div class="sm:w-[200px] sm:h-[240px] shadow-xl flex flex-col p-5 rounded-3xl w-[150px] h-[200px] dark:bg-gray-900 pt-0">
+                <div class="self-center">
+                    <img src="./images/liard.svg" alt="Ginger bread" class="sm:w-[100px] sm:h-[140px] h-[100px]">
+                </div>
+                <div class="self-start">
+                    <p class="text-lg font-semibold text-left sm:text-xl">$15</p>
+                    <p class="text-sm text-left sm:text-lg">Gingerbread</p>
+                </div>
+            </div>
+
+            <div class="sm:w-[200px] sm:h-[240px] shadow-xl flex flex-col p-5 rounded-3xl w-[150px] h-[200px] dark:bg-gray-900">
+                <div class="self-center">
+                    <img src="./images/hat.svg" alt="Santa Claus Hat" class="sm:w-[100px] sm:h-[140px] h-[100px]">
+                </div>
+                <div class="self-start">
+                    <p class="text-lg font-semibold text-left sm:text-xl">$22</p>
+                    <p class="text-sm text-left sm:text-lg">Santa Claus Hat</p>
+                </div>
+            </div>
+
+
+            <div class="sm:w-[200px] sm:h-[240px] shadow-xl flex flex-col p-5 rounded-3xl w-[150px] h-[200px] dark:bg-gray-900">
+                <div class="self-center">
+                    <img src="./images/stick.svg" alt="Candy stick" class="sm:w-[100px] sm:h-[140px] h-[100px]">
+                </div>
+                <div class="self-start">
+                    <p class="text-lg font-semibold text-left sm:text-xl">$12</p>
+                    <p class="text-sm text-left sm:text-lg">Candy Stick</p>
+                </div>
+            </div>
+
+            <div class="sm:w-[200px] sm:h-[240px] shadow-xl flex flex-col p-5 rounded-3xl w-[150px] h-[200px] dark:bg-gray-900">
+                <div class="self-center">
+                    <img src="./images/tree.svg" alt="Christmas tree" class="w-[100px] sm:h-[140px] h-[100px]">
+                </div>
+                <div class="self-start">
+                    <p class="text-lg font-semibold text-left sm:text-xl">$48</p>
+                    <p class="text-sm text-left sm:text-lg">Christmas Tree</p>
+                </div>
+            </div>
+
+            <div class="sm:w-[200px] sm:h-[240px] shadow-xl flex flex-col p-5 rounded-3xl w-[150px] h-[200px] dark:bg-gray-900">
+                <div class="self-center">
+                    <img src="./images/snowman.svg" alt="snowman" class="w-[100px] sm:h-[140px] h-[100px] ">
+                </div>
+                <div class="self-start">
+                    <p class="text-lg font-semibold text-left sm:text-xl">$35</p>
+                    <p class="text-sm text-left sm:text-lg">Snowman</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    
+    <div class="flex flex-col items-center py-10 mx-12 mt-20 bg-red-500 md:py-10 md:justify-between md:mx-20 xl:mx-60 rounded-2xl px-14 lg:mt-32 md:flex-row">
+        <div class="flex flex-col items-center text-center md:items-start lg:px-10 md:text-left">
+            <p class="text-3xl font-bold text-white">Send Good Wishes!</p>
+            <input type="text" placeholder="write your message" class="px-5 py-2 mt-4 md:px-10 rounded-3xl lg:py-3">
+            <button type="button" class="self-center px-5 py-2 mt-4 text-white bg-black rounded-3xl md:self-start md:px-10 lg:py-3">Send Message</button>
+        </div>
+        <div class="lg:px-10 max-md:mt-6">
+            <img src="./images/christmas-card.svg" alt="christmas card" class="lg:w-[350px] w-[200px]">
+        </div>
+    </div>
+
+
+
+    <div class="flex justify-center gap-6 pb-5 mt-12 sm:gap-10 max-md:flex-wrap lg:mt-32 xl:mx-60 2xl:gap-40 lg:gap-28 md:mx-20">
+        <div class="w-32">
+            <p class="text-lg font-semibold sm:text-xl">Christmas</p>
+            <p class="text-sm sm:text-base">This Christmas give a lot of love</p>
+        </div>
+        <div class="w-32">
+            <p class="text-lg font-semibold sm:text-xl">our service</p>
+            <p class="text-sm sm:text-base">Pricing</p>
+            <p class="text-sm sm:text-base">Discount</p>
+            <p class="text-sm sm:text-base">Shipping mode</p>
+        </div>
+        <div class="w-32">
+            <p class="text-lg font-semibold sm:text-xl">support</p>
+            <p class="text-sm sm:text-base">FAQs</p>
+            <p class="text-sm sm:text-base">Support center</p>
+            <p class="text-sm sm:text-base">Contact us</p>
+        </div>
+        <div class="w-32">
+            <p class="text-lg font-semibold sm:text-xl">Available on</p>
+            <p class="text-sm sm:text-base">Google Play</p>
+            <p class="text-sm sm:text-base">App Store</p>
+        </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+
